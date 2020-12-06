@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Razor Games</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="Razor Games.html">Razor Games</a>
+                </div>
+                <div class="header-links">
+                    <a href="Library.html">User Library</a>
+                    <a href="Signin.html">Sign In</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>Game Categories</h3>
+                <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+                    <li>
+                        <a href="Razor Games.html">Top Free</a>
+                    </li>
+                    <li>
+                        <a href="Razor Games.html">Top Paid</a>
+                    </li>
+                    <li>
+                        <a href="Razor Games.html">Action</a>
+                    </li>
+                    <li>
+                        <a href="Razor Games.html">Best strategy</a>
+                    </li>
+                    <li>
+                        <a href="Razor Games.html">Open world</a>
+                    </li>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <dl class="Categories">
+                        <dd>
+                            <div class="top-free">
+                                <img class="game-image" src="images/fg1.jpg" alt="Apex Legends"/>
+                                <div class="Game-name">
+                                    <a href="Game-name.html">Buy Apex Legends</a>
+                                </div>
+                                <div class="developers-name">Developed By:Respawn Entertainment</div>
+                                <div class="price">Price:$free</div>
+                                <div class="game-video">
+                                    <a href="gameplay.html">Watch Gameplay</a>
+                                </div>
+                                <div class="Ratings">4.5 stars</div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="top-free">
+                                <img class="game-image" src="images/fg2.jpg" alt="Paladins"/>
+                                <div class="Game-name">
+                                    <a href="Game-name.html">Buy Paladins</a>
+                                </div>
+                                <div class="developers-name">Developed By:Hi-Rez studios</div>
+                                <div class="price">Price:$free</div>
+                                <div class="game-video">
+                                    <a href="gameplay.html">Watch Gameplay</a>
+                                </div>
+                                <div class="Ratings">4.2 stars</div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="top-free">
+                                <img class="game-image" src="images/fg3.jpg" alt="Minecraft"/>
+                                <div class="Game-name">
+                                    <a href="Game-name.html">Buy Minecraft</a>
+                                </div>
+                                <div class="developers-name">Developed By:Mojang studios</div>
+                                <div class="price">Price:$free</div>
+                                <div class="game-video">
+                                    <a href="gameplay.html">Watch Gameplay</a>
+                                </div>
+                                <div class="Ratings">4.6 stars</div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="top-free">
+                                <img class="game-image" src="images/fg4.jpg" alt="Among us"/>
+                                <div class="Game-name">
+                                    <a href="Game-name.html">Buy Among us</a>
+                                </div>
+                                <div class="developers-name">Developed By:Innersloth</div>
+                                <div class="price">Price:$free</div>
+                                <div class="game-video">
+                                    <a href="gameplay.html">Watch Gameplay</a>
+                                </div>
+                                <div class="Ratings">4.3 stars</div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="top-free">
+                                <img class="game-image" src="images/fg4.jpg" alt="Among us"/>
+                                <div class="Game-name">
+                                    <a href="Game-name.html">Buy Among us</a>
+                                </div>
+                                <div class="developers-name">Developed By:Innersloth</div>
+                                <div class="price">Price:$free</div>
+                                <div class="game-video">
+                                    <a href="gameplay.html">Watch Gameplay</a>
+                                </div>
+                                <div class="Ratings">4.3 stars</div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </main>
+            <footer class="footer">
+                All Right Reserved
+            </footer>
+        </div>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open");    
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+</html>

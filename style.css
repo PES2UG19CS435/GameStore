@@ -1,0 +1,134 @@
+html{
+    font-size:62.5% ;
+    box-sizing:border-box;
+    color:rgb(172, 74, 74);
+    background-color:black;
+}
+body{
+    font:16px Helvetica;
+    height:100vh;
+    margin:0;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns:1fr;
+    grid-template-rows: 50px 1fr 50px;
+    height:100%;
+}
+.header{
+    grid-area:header;
+    background-color: #742027;
+    color:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:5px;
+}
+.brand a{
+    color:#090f09;
+    font-size:30px;
+    font-weight:bold;
+    text-decoration:none;
+}
+.header-links a{
+    color:#090f09;
+    font-size:18px;
+    font-weight: bold;
+}
+.header-links a:hover{
+    color:#cbdf18;
+    text-decoration:#cbdf18;
+}
+.main{
+    grid-area:main;
+}
+.footer{
+    grid-area:footer;
+    background-color: #742027;
+    color:#0f0707;
+    display:flex;
+    justify-content:first baseline;
+    align-items: center;
+    padding:5px;
+}
+.Categories{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Categories li{
+    flex:0 1 340px;
+    margin:10px;
+    height:500px;
+    border-bottom: 1px black;
+}
+.game-image{
+    width:350px;
+    height:280px;
+}
+.game-video a{
+    color:rgb(172, 74, 74);
+    font-size: large;
+    font-weight: bold;
+}
+.game-video a:hover{
+    color:#e0b423;
+    text-decoration: #e0b423;
+}
+.Game-name a{
+    color:rgb(172, 74, 74);
+    font-weight:bold;
+    font-size:large; 
+}
+.Game-name a:hover{
+    color:#e0b423;
+    text-decoration: #e0b423;
+}
+.top-free{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.brand button{
+    font-size:30px;
+    padding:5px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    transform: translateX(-300px);
+    width:300px;
+    background-color:#af323d ;
+    height: 100%;
+    color:black
+}
+.sidebar a{
+  text-decoration: none;
+  color:black;
+}
+.sidebar.open{
+    transform:translateX(0)
+}
+.sidebar-close-button{
+font-size:20px;
+padding:3px;
+background-color: black;
+color:red;
+border-radius: 50%;
+width:30px;
+height:30px;
+cursor: pointer;
+position: absolute;
+right:5px;
+top:15px;
+border:1px black solid;
+}
